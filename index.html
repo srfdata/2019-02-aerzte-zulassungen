@@ -252,7 +252,7 @@ div.tocify {
 
 <div id="vorbemerkungen" class="section level2">
 <h2>Vorbemerkungen</h2>
-<p>Dieses Dokument beschreibt die Vorprozessierung und explorative Analyse des Datensatzes, der Grundlage des auf srf.ch veröffentlichten Artikel <a href="http://www.srf.ch/data">XYZ</a> ist.</p>
+<p>Dieses Dokument beschreibt die Vorprozessierung und explorative Analyse des Datensatzes, der Grundlage des auf srf.ch veröffentlichten <a href="http://www.srf.ch/data">Artikels zu Ärzte-Zulassungen</a> ist.</p>
 <p>SRF Data legt Wert darauf, dass die Datenvorprozessierung und -Analyse nachvollzogen und überprüft werden kann. SRF Data glaubt an das Prinzip offener Daten, aber auch offener und nachvollziehbarer Methoden. Zum anderen soll es Dritten ermöglicht werden, auf dieser Vorarbeit aufzubauen und damit weitere Auswertungen oder Applikationen zu generieren.</p>
 <p>Die Endprodukte des vorliegenden Scripts, neben der vorliegenden explorativen Analyse, sind die folgenden Abbildungen:</p>
 <p>Teil A: Verschiedene Disziplinarmassnahmen einzeln</p>
@@ -274,7 +274,7 @@ div.tocify {
 <h3>R-Script &amp; Daten</h3>
 <p>Die Vorprozessierung und Analyse wurde im Statistikprogramm R vorgenommen. Das zugrunde liegende Script sowie die prozessierten Daten können unter <a href="https://srfdata.github.io/2019-02-aerzte-zulassungen/rscript.zip">diesem Link</a> heruntergeladen werden. Durch Ausführen von <code>main.Rmd</code> kann der hier beschriebene Prozess nachvollzogen und der für den Artikel verwendete Datensatz generiert werden. Dabei werden Daten aus dem Ordner <code>input</code> eingelesen und Ergebnisse in den Ordner <code>output</code> geschrieben.</p>
 <p>Verwendet wird <strong>R Version 3.5.2</strong>. Wenn der Code nicht funktioniert, könnte es daran liegen, dass die installierte R Version eine ältere ist und deshalb aus Kompatibilitätsgründen ältere Packages installiert werden, als die von uns verwendeten. Manchmal hilft es, das Skript mehrmals auszuführen, wenn ein Fehler auftritt. Besonders bei Package-Installationsproblemen kann es helfen, die R-Session mehrmals neuzustarten und den Code nochmals auszuführen. Allenfalls müssen noch Third-Party-Libraries wie z.B. <code>libgdal-dev</code> installiert werden.</p>
-<p>Debug-Informationen: <em>This report was generated on 2019-02-12 16:33:03. R version: 3.5.2 on x86_64-pc-linux-gnu. For this report, CRAN packages as of 2018-09-01 were used.</em></p>
+<p>Debug-Informationen: <em>This report was generated on 2019-02-12 16:37:40. R version: 3.5.2 on x86_64-pc-linux-gnu. For this report, CRAN packages as of 2018-09-01 were used.</em></p>
 </div>
 <div id="github" class="section level3">
 <h3>GitHub</h3>
@@ -393,12 +393,12 @@ rm(package_date, R_version)</code></pre>
 <div id="packages-laden" class="section level3">
 <h3>Packages laden</h3>
 <pre class="r"><code>source(&quot;manifest.R&quot;)</code></pre>
-<pre><code>## ── Attaching packages ────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
+<pre><code>## ── Attaching packages ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse 1.2.1 ──</code></pre>
 <pre><code>## ✔ ggplot2 3.0.0     ✔ purrr   0.2.5
 ## ✔ tibble  1.4.2     ✔ dplyr   0.7.6
 ## ✔ tidyr   0.8.1     ✔ stringr 1.3.1
 ## ✔ readr   1.1.1     ✔ forcats 0.3.0</code></pre>
-<pre><code>## ── Conflicts ───────────────────────────────────── tidyverse_conflicts() ──
+<pre><code>## ── Conflicts ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
 ## ✖ dplyr::filter() masks stats::filter()
 ## ✖ dplyr::lag()    masks stats::lag()</code></pre>
 <pre><code>## 
@@ -429,11 +429,11 @@ sessionInfo()</code></pre>
 ## 
 ## locale:
 ##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
-##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8    
-##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
-##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+##  [3] LC_TIME=de_CH.UTF-8        LC_COLLATE=en_US.UTF-8    
+##  [5] LC_MONETARY=de_CH.UTF-8    LC_MESSAGES=en_US.UTF-8   
+##  [7] LC_PAPER=de_CH.UTF-8       LC_NAME=C                 
 ##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
-## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
+## [11] LC_MEASUREMENT=de_CH.UTF-8 LC_IDENTIFICATION=C       
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
