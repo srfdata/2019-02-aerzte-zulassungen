@@ -31,7 +31,7 @@ if (R_version != paste0(version$major, ".", version$minor)) {
 
 ## Vorbemerkungen
 
-Dieses Dokument beschreibt die Vorprozessierung und explorative Analyse des Datensatzes, der Grundlage des auf srf.ch veröffentlichten Artikel [XYZ](http://www.srf.ch/data) ist.
+Dieses Dokument beschreibt die Vorprozessierung und explorative Analyse des Datensatzes, der Grundlage des auf srf.ch veröffentlichten [Artikels zu Ärzte-Zulassungen](http://www.srf.ch/data) ist.
 
 SRF Data legt Wert darauf, dass die Datenvorprozessierung und -Analyse nachvollzogen und überprüft werden kann. SRF Data glaubt an das Prinzip offener Daten, aber auch offener und nachvollziehbarer Methoden. Zum anderen soll es Dritten ermöglicht werden, auf dieser Vorarbeit aufzubauen und damit weitere Auswertungen oder Applikationen zu generieren.  
 
